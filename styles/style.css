@@ -1,0 +1,151 @@
+header{
+    font-size: 24px;
+    margin-top: 87px;
+    margin-left: 120px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #AAAAAA;
+}
+
+
+ 
+.banner{
+   display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 21px;
+    
+}
+.content-info{
+    
+    width: 50%;
+    margin-top: 150px;
+    margin-left: 120px;
+}
+.home-button{
+    display: inline-block;
+    width: 150px;
+    margin-right: 100px;
+    text-decoration: none;
+    background-color: tomato;
+    color: black;
+    font-weight: 700;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+.content-info img{
+    width: 440px;
+    height: 414px;
+    margin-right: 165px;
+    margin-top: 150px;  
+}
+hr{
+    border: 1px solid #b3b0b0;
+}
+/* +++++++++++++++++++ */
+/* product style */
+/* ******************** */
+
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    grid-column-gap: 30px;
+    
+}.section-title{
+    text-align: center;
+}
+.product{
+    box-shadow: 10px 20px 40px gray;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.product .product-img{
+    width: 300px;
+    height: 256px;
+    margin: 10px;
+}
+.product-rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star-half-alt{
+    font-size: 12px;
+
+}
+.fa-star.filled{
+    color: #FB8200;
+}
+.fa-star-half-alt.empty{
+    color: #FB8200;
+}
+
+.explore-button{
+    display: block;
+    margin-left:300px;
+    margin-top:20px;
+    width: 150px;
+    text-decoration: none;
+    background-color: tomato;
+    color: black;
+    font-weight: 700;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+
+/* gear info */
+.gear-info{
+    width: 50%;
+    margin-top: 150px;
+    margin-left: 120px;
+}
+.join-now{
+    text-decoration: none;
+    background-color: salmon;
+    color: black;
+    font-weight: 700;
+    padding: 10px 40px;
+}
+/* footer */
+.footers{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+/* ------------------- */
+/* Media Quries */
+/* ------------------- */
+/* mobile device */
+@media only screen and(max-width:688px) {
+    .banner{
+        width: 100%;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    
+    
+}
+/* tablet devices */
+@media only screen and (min-width: 688px)and (max-width:992px) {
+    .banner{
+        width: 100%;
+    }
+    .container,.products{
+        
+        grid-template-columns: repeat(2, 1f);
+    }
+    
+}
